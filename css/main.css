@@ -1,0 +1,61 @@
+footer {
+    background: rgb(10, 13, 20)
+}
+
+header {}
+
+header nav {
+    width: 100%;
+    padding: 1.5rem;
+    background-color: #0c4884;
+}
+
+header nav ul {
+    display: block;
+}
+
+header nav ul li {
+    list-style: none;
+    float: left;
+}
+
+header nav ul li a {
+    color: #fff;
+}
+
+header nav ul li a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+header .top {}
+
+header .nav-middle {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .top .nav-middle img {
+    width: 5rem;
+    height: 100%;
+}
+
+header .top .nav-middle .r-icon img {
+    width: 1rem
+}
+
+
+/*首页开始*/
+
+.content.padding-fix {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+.content .pd-lf {
+    padding-left: 3%;
+}

@@ -1,0 +1,45 @@
+img {
+    width: 100%
+}
+
+
+/*修改bootstrap max-width*/
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 374px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 498px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 664px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 780px;
+    }
+}
+
+ul li {
+    list-style: none;
+}
+
+
+/*flex相关*/
+
+.fx-inline {
+    display: inline-flex;
+}
+
+.fx-center {
+    align-items: center;
+}
