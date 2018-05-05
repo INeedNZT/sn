@@ -13,19 +13,19 @@ img {
 
 @media (min-width: 768px) {
     .container {
-        max-width: 498px;
+        max-width: 85%;
     }
 }
 
 @media (min-width: 992px) {
     .container {
-        max-width: 664px;
+        max-width: 65%;
     }
 }
 
 @media (min-width: 1200px) {
     .container {
-        max-width: 780px;
+        max-width: 65%;
     }
 }
 

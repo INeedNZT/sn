@@ -38,12 +38,13 @@ header .nav-middle {
 }
 
 header .top .nav-middle img {
-    width: 5rem;
+    width: 150px;
     height: 100%;
+    padding: 25px 0px;
 }
 
 header .top .nav-middle .r-icon img {
-    width: 1rem
+    width:30px;
 }
 
 
