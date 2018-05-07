@@ -1,7 +1,3 @@
-footer {
-    background: rgb(10, 13, 20)
-}
-
 header {}
 
 header nav {
@@ -30,26 +26,140 @@ header nav ul li a:hover {
 
 header .top {}
 
-header .nav-middle {
+.nav-middle {
     width: 80%;
     margin: auto;
     display: flex;
-    justify-content: space-between;
 }
 
 header .top .nav-middle img {
-    width: 150px;
+    width: 10.5rem;
     height: 100%;
     padding: 25px 0px;
 }
 
 header .top .nav-middle .r-icon img {
-    width:30px;
+    width: 30px;
 }
 
+footer {
+    background: rgb(10, 13, 20)
+}
+
+footer .container {
+    display: flex;
+    padding: 0px;
+}
+
+footer .lf {
+    flex: 2;
+    flex-flow: column;
+    padding: 60px 0px;
+}
+
+footer .lf img {
+    display: flex;
+    width: 75px;
+}
+
+footer .lf span {
+    display: inline-flex;
+    color: white !important;
+    margin-top: 30px;
+    font-size: 0.85rem;
+}
+
+footer .mid {
+    flex: 4;
+    color: rgb(79, 80, 83);
+    flex-flow: column;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+footer .mid .mid-top {
+    margin-top: 55px;
+    font-size: 0.85rem;
+}
+
+footer .mid .mid-bottom {
+    font-size: 0.85rem;
+    margin-top: 30px;
+}
+
+footer .mid .mid-bottom .b-o {
+    color: rgb(181, 138, 85);
+    font-size: 1.2rem;
+}
+
+footer .rt {
+    flex: 3;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 90px;
+}
+
+footer .rt .rt-lf {
+    flex: 1;
+    display: flex;
+}
+
+footer .rt .rt-lf ul {
+    padding: 0;
+    flex: 1;
+}
+
+footer .rt a {
+    font-size: 0.85rem;
+    color: #fff;
+}
+
+footer .rt .rt-lf ul a:hover {
+    text-decoration: none;
+    color: rgb(181, 138, 85);
+}
+
+footer .rt .active {
+    color: rgb(181, 138, 85);
+}
+
+footer .rt .rt-lf ul li a.active {
+    color: rgb(181, 138, 85);
+}
+
+footer .rt .rt-rt {
+    flex: 1;
+    margin-right: -20px;
+    color: #fff;
+    font-size: 0.85rem;
+}
+
+footer .rt .rt-rt .search {
+    background: url(../image/search.jpg);
+    background-position: 130% 50%;
+    margin: 5px 0px;
+    position: relative;
+}
+
+footer .rt .rt-rt .search span{
+    cursor: pointer;
+    width: 25px;
+    height: 100%;
+    text-align: right;
+    position: absolute;
+    right: 6px;
+    top: 0;
+}
+
+footer .rt .rt-rt .search input {
+    padding-left: 8px;
+    color: #fff;
+    background: transparent;
+    outline: none;
+    border: 0;
+}
 
 /*首页开始*/
-
 .content.padding-fix {
     padding-left: 0px;
     padding-right: 0px;

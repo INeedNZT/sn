@@ -2,16 +2,26 @@ img {
     width: 100%
 }
 
+html {
+    font-size: 14px;
+}
+
 
 /*修改bootstrap max-width*/
 
 @media (min-width: 576px) {
+    html {
+        font-size: 12px;
+    }
     .container {
         max-width: 374px;
     }
 }
 
 @media (min-width: 768px) {
+    html {
+        font-size: 12px;
+    }
     .container {
         max-width: 85%;
     }
@@ -24,6 +34,9 @@ img {
 }
 
 @media (min-width: 1200px) {
+    html {
+        font-size: 16px;
+    }
     .container {
         max-width: 65%;
     }
@@ -36,10 +49,18 @@ ul li {
 
 /*flex相关*/
 
+.fx {
+    display: flex;
+}
+
 .fx-inline {
     display: inline-flex;
 }
 
 .fx-center {
     align-items: center;
+}
+
+.fx-between {
+    justify-content: space-between;
 }

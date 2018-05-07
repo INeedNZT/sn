@@ -1,0 +1,72 @@
+<div>
+    <header>
+        <div class="top">
+            <div class="nav-middle fx-between">
+                <div class="fx">
+                    <img src="image/logo.jpg" alt="" />
+                </div>
+                <div class="fx fx-center">
+                    <span class="r-icon">
+                        <img src="image/china.jpg" alt="" />
+                            中文版
+                            <span>|</span>
+                        <img src="image/england.jpg" alt="" />
+                            英文版
+                    </span>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <ul class="nav-middle fx-between clearfix">
+                <li><router-link to="home">首页</router-link></li>
+                <li><router-link to="about">关于我们</router-link></li>
+                <li><a href="#">企业新闻</a></li>
+                <li><a href="#">产品展示</a></li>
+                <li><a href="#">在线服务</a></li>
+                <li><a href="#">人力资源</a></li>
+                <li><a href="#">联系我们</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <router-view></router-view>
+
+    <footer>
+        <div class="container">
+            <div class="lf">
+                <img src="image/logo_black.jpg" alt="">
+                <span>COPYRIGHT ©-2017 shuangniaoCO.,LTD.</span>
+            </div>
+            <div class="mid">
+                <div class="mid-top"><div style="color:white;">地址：江苏省无锡市惠山区惠明路88号</div>
+                    <div>ADD:Jiangsu province Wuxi city Huishan District Hui Ming Road No.88</div>
+                </div>
+                <div class="mid-bottom"><div style="color:white;">全国统一客服热线:</div>
+                    <div class="b-o">400-809-8883</div>
+                </div>
+            </div>
+            <div class="rt">
+                <div class="rt-lf">
+                    <ul>
+                        <li><router-link to="about" class="active">关于双鸟</router-link></li>
+                        <li><a href="#">企业新闻</a></li>
+                        <li><a href="#">产品展示</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">在线服务</a></li>
+                        <li><a href="#">人力资源</a></li>
+                        <li><a href="#">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="rt-rt">
+                    <span>站内快速搜索</span>
+                    <div class="search">
+                        <input type="text" />
+                        <span></span>
+                    </div>
+                    <span><a href="#">WWW.<span class="active">SAMLINCHINA</span>.COM</a></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
