@@ -1,9 +1,24 @@
 img {
-    width: 100%
+    width: 100%;
 }
 
 html {
     font-size: 14px;
+}
+
+html body {
+    background-color: rgb(250, 250, 250);
+    font-family: "Microsoft YaHei";
+}
+
+.col-7 {
+    flex: 0 0 56.333333%;
+    max-width: 56.333333%;
+}
+
+.col-5 {
+    flex: 0 0 43.666667%;
+    max-width: 43.666667%;
 }
 
 
@@ -63,4 +78,8 @@ ul li {
 
 .fx-between {
     justify-content: space-between;
+}
+
+.fx-column {
+    flex-flow: column;
 }

@@ -1,4 +1,4 @@
 define(['jquery'], function($) {
     return function() { 
-        return {  } }
+        return {isSubTitle:true  } }
 });

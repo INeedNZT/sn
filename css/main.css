@@ -29,21 +29,36 @@ header .top {}
 .nav-middle {
     width: 80%;
     margin: auto;
-    display: flex;
 }
 
-header .top .nav-middle img {
-    width: 10.5rem;
-    height: 100%;
+header .top .nav-middle .t-img {
     padding: 25px 0px;
 }
 
+header .top .nav-middle .t-img img {
+    width: 10.5rem;
+}
+
+header .top .nav-middle .r-icon {
+    display: flex;
+    align-items: center;
+}
+
+header .top .nav-middle .r-icon b {
+    padding: 0 8px;
+}
+
 header .top .nav-middle .r-icon img {
-    width: 30px;
+    width: 2.15rem;
+}
+
+header nav.sub-title {
+    position: absolute;
+    opacity: 0.85;
 }
 
 footer {
-    background: rgb(10, 13, 20)
+    background: rgb(10, 13, 20);
 }
 
 footer .container {
@@ -58,7 +73,6 @@ footer .lf {
 }
 
 footer .lf img {
-    display: flex;
     width: 75px;
 }
 
@@ -141,7 +155,7 @@ footer .rt .rt-rt .search {
     position: relative;
 }
 
-footer .rt .rt-rt .search span{
+footer .rt .rt-rt .search span {
     cursor: pointer;
     width: 25px;
     height: 100%;
@@ -159,14 +173,79 @@ footer .rt .rt-rt .search input {
     border: 0;
 }
 
-/*首页开始*/
-.content.padding-fix {
+
+/*首页*/
+
+.container.padding-fix {
     padding-left: 0px;
     padding-right: 0px;
-    padding-top: 4%;
-    padding-bottom: 4%;
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
 
 .content .pd-lf {
-    padding-left: 3%;
+    padding-left: 2.5%;
+}
+
+.content h6 {
+    font-weight: bold;
+}
+
+.content .text {
+    font-size: 0.85rem;
+    background-color: #fff;
+    padding: 3.6rem 2.5rem;
+}
+
+.col-between {
+    flex-flow: column;
+    justify-content: space-between;
+    display: flex;
+}
+
+
+/* 联系我们 */
+
+.ct {
+    font-size: 0.8rem;
+}
+
+.ct .ct-title {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 0.5rem;
+    margin-bottom: 4rem;
+}
+
+.ct .ct-info {
+    margin-bottom: 4rem;
+}
+
+.ct .ct-info .item {}
+
+.ct .ct-info .item .lf {
+    margin-top: 5px;
+    margin-right: 15px;
+}
+
+.ct .ct-info .item img {
+    width: 4rem;
+}
+
+.ct .ct-link {
+    margin-bottom: 2.5rem;
+}
+
+.ct .ct-link .top {
+    display: inline-block;
+    padding-right: 12rem;
+    border-bottom: 2px dashed #ddd;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.ct .ct-link .content {
+    display: flex;
+    flex-flow: column;
 }

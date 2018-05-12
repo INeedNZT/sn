@@ -15,9 +15,23 @@ define(['vueRouter'], function(VueRouter) {
         return requireDataAsync(resolve, 'text!../view/about.html', 'components/about');
     }
 
-    var HOME = function(resolve) {
-        return requireDataAsync(resolve, 'text!../view/home.html', 'components/home');
+    var CONTACT = function(resolve) {
+        return requireDataAsync(resolve, 'text!../view/contact.html', 'components/contact');
     }
+
+    var HOME = function(resolve) {
+      return require(["text!../view/home.html", "components/home"], function(text, data) {
+        var beforeRouteLeave = function(to, from, next) {
+          this.$parent._data.isSubTitle = true;
+          next();
+        };
+        resolve({
+          template: text,
+          data: data,
+          beforeRouteLeave: beforeRouteLeave
+        });
+      });
+    };
 
     var routes = [
         {
@@ -30,7 +44,8 @@ define(['vueRouter'], function(VueRouter) {
             children: [
                 { path: '', component: function(resolve) { HOME(resolve) } },
                 { path: 'home', component: function(resolve) { HOME(resolve) } },
-                { path: 'about', component: function(resolve) { ABOUT(resolve) } }
+                { path: 'about', component: function(resolve) { ABOUT(resolve) } },
+                { path: 'contact', component: function(resolve) { CONTACT(resolve) } }
             ]
         } 
     ]

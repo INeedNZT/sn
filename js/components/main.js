@@ -2,7 +2,7 @@
 define(["vue", "vueRouter", "routerConfig"], function(
   Vue,
   VueRouter,
-  routerConfig
+  routerConfig 
 ) {
   Vue.use(VueRouter);
   var app = new Vue({ el: "#app", router: routerConfig.router });
