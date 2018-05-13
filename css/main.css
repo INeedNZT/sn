@@ -1,251 +1,392 @@
-header {}
+header {
+}
 
 header nav {
-    width: 100%;
-    padding: 1.5rem;
-    background-color: #0c4884;
+  width: 100%;
+  padding: 1.5rem;
+  background-color: #0c4884;
+}
+
+header nav .nav-active {
+  color: rgb(146, 118, 95);
 }
 
 header nav ul {
-    display: block;
+  display: block;
 }
 
 header nav ul li {
-    list-style: none;
-    float: left;
+  list-style: none;
+  float: left;
 }
 
 header nav ul li a {
-    color: #fff;
+  color: #fff;
 }
 
 header nav ul li a:hover {
-    text-decoration: none;
-    color: #fff;
+  text-decoration: none;
+  color: rgb(146, 118, 95);
 }
 
-header .top {}
+header .top {
+}
 
 .nav-middle {
-    width: 80%;
-    margin: auto;
+  width: 80%;
+  margin: auto;
 }
 
 header .top .nav-middle .t-img {
-    padding: 25px 0px;
+  padding: 25px 0px;
 }
 
 header .top .nav-middle .t-img img {
-    width: 10.5rem;
+  width: 10.5rem;
 }
 
 header .top .nav-middle .r-icon {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 header .top .nav-middle .r-icon b {
-    padding: 0 8px;
+  padding: 0 8px;
 }
 
 header .top .nav-middle .r-icon img {
-    width: 2.15rem;
+  width: 2.15rem;
 }
 
 header nav.sub-title {
-    position: absolute;
-    opacity: 0.85;
+  position: absolute;
+  opacity: 0.85;
 }
 
 footer {
-    background: rgb(10, 13, 20);
+  background: rgb(10, 13, 20);
 }
 
 footer .container {
-    display: flex;
-    padding: 0px;
+  display: flex;
+  padding: 0px;
 }
 
 footer .lf {
-    flex: 2;
-    flex-flow: column;
-    padding: 60px 0px;
+  flex: 2;
+  flex-flow: column;
+  padding: 60px 0px;
 }
 
 footer .lf img {
-    width: 75px;
+  width: 75px;
 }
 
 footer .lf span {
-    display: inline-flex;
-    color: white !important;
-    margin-top: 30px;
-    font-size: 0.85rem;
+  display: inline-flex;
+  color: white !important;
+  margin-top: 30px;
+  font-size: 0.85rem;
 }
 
 footer .mid {
-    flex: 4;
-    color: rgb(79, 80, 83);
-    flex-flow: column;
-    padding-left: 15px;
-    padding-right: 15px;
+  flex: 4;
+  color: rgb(79, 80, 83);
+  flex-flow: column;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 footer .mid .mid-top {
-    margin-top: 55px;
-    font-size: 0.85rem;
+  margin-top: 55px;
+  font-size: 0.85rem;
 }
 
 footer .mid .mid-bottom {
-    font-size: 0.85rem;
-    margin-top: 30px;
+  font-size: 0.85rem;
+  margin-top: 30px;
 }
 
 footer .mid .mid-bottom .b-o {
-    color: rgb(181, 138, 85);
-    font-size: 1.2rem;
+  color: rgb(181, 138, 85);
+  font-size: 1.2rem;
 }
 
 footer .rt {
-    flex: 3;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 90px;
+  flex: 3;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 90px;
 }
 
 footer .rt .rt-lf {
-    flex: 1;
-    display: flex;
+  flex: 1;
+  display: flex;
 }
 
 footer .rt .rt-lf ul {
-    padding: 0;
-    flex: 1;
+  padding: 0;
+  flex: 1;
 }
 
 footer .rt a {
-    font-size: 0.85rem;
-    color: #fff;
+  font-size: 0.85rem;
+  color: #fff;
 }
 
 footer .rt .rt-lf ul a:hover {
-    text-decoration: none;
-    color: rgb(181, 138, 85);
+  text-decoration: none;
+  color: rgb(181, 138, 85);
 }
 
 footer .rt .active {
-    color: rgb(181, 138, 85);
+  color: rgb(181, 138, 85);
 }
 
 footer .rt .rt-lf ul li a.active {
-    color: rgb(181, 138, 85);
+  color: rgb(181, 138, 85);
 }
 
 footer .rt .rt-rt {
-    flex: 1;
-    margin-right: -20px;
-    color: #fff;
-    font-size: 0.85rem;
+  flex: 1;
+  margin-right: -20px;
+  color: #fff;
+  font-size: 0.85rem;
 }
 
 footer .rt .rt-rt .search {
-    background: url(../image/search.jpg);
-    background-position: 130% 50%;
-    margin: 5px 0px;
-    position: relative;
+  background: url(../image/search.jpg);
+  background-position: 130% 50%;
+  margin: 5px 0px;
+  position: relative;
 }
 
 footer .rt .rt-rt .search span {
-    cursor: pointer;
-    width: 25px;
-    height: 100%;
-    text-align: right;
-    position: absolute;
-    right: 6px;
-    top: 0;
+  cursor: pointer;
+  width: 25px;
+  height: 100%;
+  text-align: right;
+  position: absolute;
+  right: 6px;
+  top: 0;
 }
 
 footer .rt .rt-rt .search input {
-    padding-left: 8px;
-    color: #fff;
-    background: transparent;
-    outline: none;
-    border: 0;
+  padding-left: 8px;
+  color: #fff;
+  background: transparent;
+  outline: none;
+  border: 0;
 }
-
 
 /*首页*/
 
 .container.padding-fix {
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-top: 3%;
-    padding-bottom: 3%;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
 
 .content .pd-lf {
-    padding-left: 2.5%;
+  padding-left: 2.5%;
 }
 
 .content h6 {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .content .text {
-    font-size: 0.85rem;
-    background-color: #fff;
-    padding: 3.6rem 2.5rem;
+  font-size: 0.85rem;
+  background-color: #fff;
+  padding: 3.6rem 2.5rem;
 }
 
 .col-between {
-    flex-flow: column;
-    justify-content: space-between;
-    display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  display: flex;
 }
-
 
 /* 联系我们 */
 
 .ct {
-    font-size: 0.8rem;
+  font-size: 0.85rem;
 }
 
-.ct .ct-title {
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 0.5rem;
-    margin-bottom: 4rem;
+.c-title {
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 0.5rem;
+  margin-bottom: 4rem;
 }
 
 .ct .ct-info {
-    margin-bottom: 4rem;
+  margin-bottom: 4rem;
 }
 
-.ct .ct-info .item {}
+.ct .ct-info .item {
+}
 
 .ct .ct-info .item .lf {
-    margin-top: 5px;
-    margin-right: 15px;
+  margin-top: 5px;
+  margin-right: 15px;
 }
 
 .ct .ct-info .item img {
-    width: 4rem;
+  width: 4rem;
 }
 
 .ct .ct-link {
-    margin-bottom: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .ct .ct-link .top {
-    display: inline-block;
-    padding-right: 12rem;
-    border-bottom: 2px dashed #ddd;
-    padding-bottom: 0.5rem;
-    margin-bottom: 0.5rem;
-    font-size: 1rem;
-    font-weight: bold;
+  display: inline-block;
+  padding-right: 12rem;
+  border-bottom: 2px dashed #ddd;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 .ct .ct-link .content {
-    display: flex;
-    flex-flow: column;
+  display: flex;
+  flex-flow: column;
+}
+
+/* 人力资源 */
+.person {
+  font-size: 0.85rem;
+}
+
+.person .p-hire {
+}
+
+.person .p-hire h6 {
+  margin-bottom: 0.15rem;
+}
+
+.person ul.item {
+  padding: 0;
+  margin-top: -0.8rem;
+}
+
+.person ul.item > li {
+  padding: 3rem 0;
+  margin: 1.5rem 0;
+  border-top: 1px solid #212529;
+  border-bottom: 1px solid #212529;
+  display: flex;
+  font-size: 0.8rem;
+}
+
+.person ul.item li .lf {
+  flex: 1;
+  flex-flow: column;
+}
+
+.person ul.item li .lf h6 {
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.person ul.item li .rt {
+  flex: 2;
+  padding-left: 2.5rem;
+  margin-left: 2rem;
+  border-left: 1px solid #ddd;
+  flex-flow: column;
+}
+
+.person ul.item li .rt .rt-row {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+.person ul.item li .rt .rt-row:last-child {
+  margin-bottom: 0;
+}
+
+.person ul.item li .rt .rt-row .row-lf {
+}
+
+.person ul.item li .rt .rt-row .col-ul {
+  flex: 1;
+}
+
+.person ul.item li .rt .rt-row ul li {
+  margin-bottom: 0.3rem;
+}
+
+.person ul.item li .rt .rt-row ul li:last-child {
+  margin-bottom: 0;
+}
+
+/* 在线服务 */
+.server {
+  font-size: 0.85rem;
+}
+
+.server .s-title {
+  margin-bottom: 1rem;
+}
+
+.server table {
+  width: 100%;
+}
+
+.server table tbody {
+}
+
+.server table tbody input {
+  border: 0;
+  outline: none;
+  margin: 1px 0;
+  text-indent: 0.8rem;
+  width: 70%;
+}
+
+.server table tbody select {
+  border: 0;
+  outline: none;
+  margin: 2px 0;
+}
+
+.server table tbody textarea {
+  border: 0;
+  outline: none;
+  margin: 2px 0;
+  width: 90%;
+}
+
+.server table tbody td {
+  border: 1px solid #212529;
+  padding-left: 1.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.server .s-btn{
+  text-align: right;
+  margin-top: 2.5rem;
+}
+
+.server .s-btn button{
+  border-radius: 0;
+  padding: 0.35rem 2.5rem;
+  margin-left: 0.5rem;
+  outline: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.server .s-btn .btn-black{
+  color: #fff;
+  background-color: #212529;
+}
+
+.server .s-btn .btn-blue{
+  color: #fff;
+  background-color: rgb(0, 63, 126);
 }

@@ -17,16 +17,16 @@
         <nav id="nav" v-bind:class="{'sub-title':isSubTitle}">
             <ul class="nav-middle fx fx-between clearfix">
                 <li>
-                    <router-link to="home">首页</router-link>
+                    <router-link :to="{name:'home'}">首页</router-link>
                 </li>
                 <li>
-                    <router-link to="about">关于我们</router-link>
+                    <router-link :to="{name:'about'}">关于我们</router-link>
                 </li>
                 <li><a href="#">企业新闻</a></li>
                 <li><a href="#">产品展示</a></li>
-                <li><a href="#">在线服务</a></li>
-                <li><a href="#">人力资源</a></li>
-                <li><router-link to="contact">联系我们</router-link></li>
+                <li><router-link :to="{name:'server'}">在线服务</router-link></li>
+                <li><router-link :to="{name:'person'}">人力资源</router-link></li>
+                <li><router-link :to="{name:'contact'}">联系我们</router-link></li>
             </ul>
         </nav>
     </header>

@@ -7,7 +7,6 @@ html {
 }
 
 html body {
-    background-color: rgb(250, 250, 250);
     font-family: "Microsoft YaHei";
 }
 
@@ -81,5 +80,12 @@ ul li {
 }
 
 .fx-column {
+    flex-flow: column;
+}
+
+
+.col-ul ul{
+    padding: 0;
+    display: flex;
     flex-flow: column;
 }
