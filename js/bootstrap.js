@@ -2,7 +2,7 @@
 requirejs.config({
     paths: {
         jquery: '../vendor/jquery/jquery',
-        vue: '../vendor/vue/vue',
+        vue: '../vendor/vue/vue.min',
         vueRouter: '../vendor/vue/vue.router',
         text: '../vendor/requirejs/text',
         routerConfig: './router.config',
@@ -12,6 +12,5 @@ requirejs.config({
 
 
 requirejs(['components/main'], function(app) {
-    console.log(app)
     console.info('app start!');
 });
