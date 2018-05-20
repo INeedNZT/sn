@@ -6,7 +6,7 @@
                     <img src="image/logo.jpg" alt="" />
                 </div>
                 <div class="media fx-center">
-                     <span class="r-icon">
+                    <span class="r-icon">
                         <img src="image/china.jpg" alt="" />&nbsp;中文版
                             <b>|</b>
                     <img src="image/england.jpg" alt="" />&nbsp;英文版
@@ -22,11 +22,21 @@
                 <li>
                     <router-link :to="{name:'about'}">关于我们</router-link>
                 </li>
-                <li><a href="#">企业新闻</a></li>
-                <li><a href="#">产品展示</a></li>
-                <li><router-link :to="{name:'server'}">在线服务</router-link></li>
-                <li><router-link :to="{name:'person'}">人力资源</router-link></li>
-                <li><router-link :to="{name:'contact'}">联系我们</router-link></li>
+                <li>
+                    <router-link :to="{name:'news'}">企业新闻</router-link>
+                </li>
+                <li>
+                    <router-link :to="{name:'product'}">产品展示</router-link>
+                </li>
+                <li>
+                    <router-link :to="{name:'server'}">在线服务</router-link>
+                </li>
+                <li>
+                    <router-link :to="{name:'person'}">人力资源</router-link>
+                </li>
+                <li>
+                    <router-link :to="{name:'contact'}">联系我们</router-link>
+                </li>
             </ul>
         </nav>
     </header>
@@ -53,15 +63,31 @@
                 <div class="rt-lf">
                     <ul>
                         <li>
-                            <router-link to="about" class="active">关于双鸟</router-link>
+                            <a href="#/app/about" v-bind:class="{'nav-active':$route.path==='/app/about' || $route.path==='/app/home' || $route.path==='/app'}">关于双鸟</a>
                         </li>
-                        <li><a href="#">企业新闻</a></li>
-                        <li><a href="#">产品展示</a></li>
+                        <li>
+                            <router-link :to="{name:'news'}">企业新闻</router-link>
+                        </li>
+                        <li>
+                            <router-link :to="{name:'product'}">产品展示</router-link>
+                        </li>
+                        <li>
+                            <router-link :to="{name:'server'}">在线服务</router-link>
+                        </li>
                     </ul>
                     <ul>
-                        <li><a href="#">在线服务</a></li>
-                        <li><a href="#">人力资源</a></li>
-                        <li><a href="#">联系我们</a></li>
+                        <!-- <li>
+                            <router-link>合作加盟</router-link>
+                        </li> -->
+                        <li>
+                            <router-link :to="{name:'person'}">人力资源</router-link>
+                        </li>
+                        <li>
+                            <router-link :to="{name:'partner'}">主要客户</router-link>
+                        </li>
+                        <li>
+                            <router-link :to="{name:'contact'}">联系我们</router-link>
+                        </li>
                     </ul>
                 </div>
                 <div class="rt-rt">

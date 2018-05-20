@@ -1,3 +1,192 @@
 <div>
-    <img src="image/sub_banner.jpg" alt="">
+    <div>
+        <img src="image/sub_banner.jpg" alt="">
+    </div>
+    <div class="about container padding-fix">
+        <div class="c-title">
+            您现在的位置&nbsp;：首页&nbsp;»&nbsp;关于我们&nbsp;»&nbsp;{{active==='intro'?'公司介绍':active==='culture'?'企业文化':active==='course'?'发展历程':active==='honor'?'荣誉资源':''}}
+        </div>
+
+        <div class="pro-title">
+            <ul class="clearfix">
+                <li v-bind:class="{active:active==='intro'}" @click="active='intro'"><span class="li-item">公司介绍</span></li>
+                <li v-bind:class="{active:active==='culture'}" @click="active='culture'"><span class="li-item">企业文化</span></li>
+                <li v-bind:class="{active:active==='course'}" @click="active='course'"><span class="li-item">发展历程</span></li>
+                <li v-bind:class="{active:active==='honor'}" @click="active='honor'"><span class="li-item">荣誉资质</span></li>
+            </ul>
+        </div>
+
+        <!-- 公司介绍 -->
+        <div class="intro" v-if="active==='intro'">
+            <div>
+                <img src="image/intro.jpg" alt="">
+            </div>
+            <div class="intro-content">
+                <p>
+                    无锡双鸟科技股份有限公司（无锡双菱电器科技有限公司）是一家集研发、制造、销售、服务于一体的汽车空调总成、汽车空调压缩机及汽车空调零部件的专业生产厂家。公司成立于1998年，2008年公司改制，2012年公司由石塘湾工业园搬迁至江苏省无锡市惠山开发区汽车零部件园区，总投资额达3.5亿，固定资产投资2亿元。占地面积93380㎡，建筑面积45000㎡
+                </p>
+                <p>
+                    公司获得了国家高新技术企业称号、江苏省科技型中小型企业、江苏省创新型企业，无锡市名牌产品、无锡市重点培育和发展的国际知名品牌等多项荣誉。并通过ISO和TS16949质量体系认证，现有员工300多名，公司成立了企业技术中心，拥有30多项专利为公司创新发展作有力的保障。目前公司已为国内、外商用车（重、中卡车）、工程车的主流供应商，公司产品广泛应用于商用车、工程车和乘用车。服务创造价值，专业成就品牌。
+                </p>
+                <p>
+                    我公司将一如既往地秉承诚实、守信的原则，以一流的管理、一流的技术、成产出一流的产品，为您提供优质、快速、高效的服务，立志为中国汽车工业的发展作出应有的贡献理念：在追求中不断超越自己
+                </p>
+                <div>
+                    LDEA: CONTINUAL LMPROVEMENT IN PURSUE
+                </div>
+                <div>
+                    宗旨：尽心为用户提供超值产品
+                </div>
+                <div>
+                    PRINCIPLE: PROVIDE SUPER VALUE PRODUCTS
+                </div>
+                <div>
+                    精神：勇于创新，协作共赢
+                </div>
+                <div>
+                    SPIRIT: ACTIVE IN CREATIVITY, WIN-WIN COOPERATION
+                </div>
+                <div>
+                    质量：高标准、精细化、零缺陷
+                </div>
+                <div>
+                    QUALITY: HIGH STANDARD, PRECISE, ZERO DEFECTS
+                </div>
+                <div>
+                    服务：承诺必实现，服务人性化
+                </div>
+                <div>
+                    SERVICE: ACCORDING TO PROMISE, LNSIST ON PEOP-ORIENTED SERVICE
+                </div>
+
+            </div>
+        </div>
+
+        <!-- 企业文化 -->
+        <div class="culture" v-if="active==='culture'">
+            <div class="c-up">
+                <div>
+                    <img src="image/culture1.jpg" alt="">
+                </div>
+                <div>
+                    <p>双鸟集团自2004年起在石塘湾中学设立了奖学、助学基金，至今已有200余名学生因学习成绩优异而获奖；另有4名品学兼优家境贫困的学生获得资助，他们在初中至大学就读期间，向学校交纳的全部费用以及购买必需学习用品的费用，都由双鸟科技股份有限公司以予资助。为了更好地发挥“双鸟科技奖学金”帮扶贫困学子、激励优秀学生的作用，双鸟科技股份有限公司和石塘湾中学商议决定，从今年开始，调整奖学金结构，扩大奖励范围：把“双鸟科技奖学金”分成“优秀园丁奖”和“学业进步奖”两部分。</p>
+                    <p>自2004年以来，双鸟科技与石湾中学共同经历了11年的风风雨雨。石湾中学见证了双鸟科技的蓬勃发展，而双鸟科技则帮助着一批又一批的莘莘学子。为他们的生活起居，为他们的文化道德所尽绵薄之力。帮助了一个又一个的学生，让他们感受到社会的温暖与学校的关怀和呵护。</p>
+                    <p>2010年，石塘湾中学举行“双鸟科技奖学金”颁奖大会，学校领导、无锡双鸟科技股份有限公司代表蒋森度先生和部分学生、家长共700多人参加了会议。石塘湾中学87届高中毕业生、无锡市双鸟科技有限公司董事长蒋志峰先生关注家乡教育事业。</p>
+                    <p>2015年3月9日，石塘湾中学举行新学期开学典礼暨“双鸟科技奖学金”颁奖仪式，活动有学校副校长李坚主持，全校师生、50位学生家长代表和无锡双鸟科技股份有限公司代表参加了本次活动。</p>
+                </div>
+            </div>
+            <div class="c-down">
+                <div class="c-d-t">
+                    <h5>公司活动留影</h5>
+                </div>
+                <ul class="clearfix c-d-c">
+                    <li><img src="image/culture2.jpg" alt=""><span>拓展活动</span></li>
+                    <li><img src="image/culture3.jpg" alt=""><span>拓展活动</span></li>
+                    <li><img src="image/culture4.jpg" alt=""><span>企业组织植树节活动，提高员工的环保意识</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 发展历程 -->
+        <div class="course" v-if="active==='course'">
+            <div class="r-up">
+                <div class="r-lf">
+                    <div class="fx">
+                        <span class="r-i">
+                            <img src="image/1998.jpg" alt="">
+                        </span>
+                        <span class="r-i-c">
+                            <div>1998年，无锡双鸟科技股份有限公司</div>
+                            <div>(下辖子公司无锡双菱汽车空调有限公司)成立，</div>
+                            <div>创业团队中有机械行业及汽车空调行业内的佼佼者</div>
+                        </span>
+                    </div>
+                    <div class="fx">
+                        <span class="r-i">
+                            <img src="image/2008.jpg" alt="">
+                        </span>
+                        <span class="r-i-c">
+                            <div>2008年12月，公司进行改制，注册资本2700万元，</div>
+                            <div>经过二次增资现有注册资本3749.6252万元，</div>
+                            <div>总投资额达3.5亿元，</div>
+                            <div>固定资产投资逾2亿元。</div>
+                        </span>
+                    </div>
+                    <div class="fx">
+                        <span class="r-i">
+                            <img src="image/2012.jpg" alt="">
+                        </span>
+                        <span class="r-i-c">
+                            <div>2012年，组建无锡双菱电气科技有限公司子公司</div>
+                            <div>2012年11月，工厂搬迁至位于无锡汽车工业腹地——惠山开发区，</div>
+                            <div>并斥巨资引进两条世界领先的进口全自动流水线，</div>
+                            <div>使公司跻身中国规模最大汽车空调制造厂商行列。</div>
+                        </span>
+                    </div>
+                </div>
+                <div class="r-rt">
+                    <img src="image/course1.jpg" alt="">
+                    <img src="image/course2.jpg" alt="">
+                </div>
+            </div>
+            <div class="r-down">
+                <img src="image/intro.jpg" alt="">
+            </div>
+        </div>
+
+        <!-- 荣誉资质 -->
+        <div class="honor" v-if="active==='honor'">
+            <div class="h-t">
+                <h5>荣誉资质</h5>
+            </div>
+            <div class="h-d">
+                <transition name="slide-fade">
+                    <span v-if="page===1 || page==2">
+                        我们通过ISO9001、ISO/TS16949国际质量体系认证，我们获得的企业荣誉有：江苏省火炬计划项目，江苏省高新技术企业，江苏省科技型中小企业，江苏省成长型中小企业，无锡市企业技术中心，无锡市知名商标，无锡市政府颁发的3A级信用等级，无锡市重合同守信用企业，无锡市重点培育和发展的国际知名品牌，无锡市慈善之星，无锡市投资发展奖
+                    </span>
+                </transition>
+                <transition name="slide-fade">
+                    <span v-if="page===3"><b>我们拥有业内领先的国家专利数，</b>一路走来，双鸟科技以过硬的产品质量、强大的科研实力赢得了政府与权威评测机构的认定。</span>
+                </transition>
+            </div>
+            <div class="h-l">
+                <transition name="slide-fade">
+                    <ul class="clearfix" v-if="page===1" v-cloak>
+                        <li><img src="image/honor1.jpg" alt=""></li>
+                        <li><img src="image/honor2.jpg" alt=""></li>
+                        <li><img src="image/honor3.jpg" alt=""></li>
+                        <li><img src="image/honor4.jpg" alt=""></li>
+                        <li><img src="image/honor5.jpg" alt=""></li>
+                        <li><img src="image/honor6.jpg" alt=""></li>
+                    </ul>
+                </transition>
+                <transition name="slide-fade">
+                    <ul class="clearfix" v-if="page===2" v-cloak>
+                        <li><img src="image/honor7.jpg" alt=""></li>
+                        <li><img src="image/honor8.jpg" alt=""></li>
+                        <li><img src="image/honor9.jpg" alt=""></li>
+                    </ul>
+                </transition>
+                <transition name="slide-fade">
+                    <ul class="clearfix" v-if="page===3" v-cloak>
+                        <li><img src="image/honor10.jpg" alt=""></li>
+                        <li><img src="image/honor11.jpg" alt=""></li>
+                        <li><img src="image/honor12.jpg" alt=""></li>
+                        <li><img src="image/honor13.jpg" alt=""></li>
+                    </ul>
+                </transition>
+            </div>
+            <div class="h-p">
+                <ul class="clearfix">
+                    <li v-bind:class="{b:page===1,w:page!==1}" @click="page=1"></li>
+                    <li v-bind:class="{b:page===2,w:page!==2}" @click="page=2"></li>
+                    <li v-bind:class="{b:page===3,w:page!==3}" @click="page=3"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
 </div>

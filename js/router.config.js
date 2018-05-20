@@ -2,7 +2,11 @@ define(['vueRouter'], function(VueRouter) {
     /* 通过requirejs异步获取资源文件，返回component组件对象 */
     function requireDataAsync(resolve, html, js) {
         return require([html, js], function(text, data) {
-            resolve({ template: text, data: data });
+            if (typeof data === 'function') {
+              resolve({ template: text, data: data });
+            } else if(typeof data === 'object'){
+                resolve({ template: text, data: data.data, methods: data.methods });
+            }
         });
     }
 
@@ -25,6 +29,18 @@ define(['vueRouter'], function(VueRouter) {
 
     var SERVER = function(resolve) {
         return requireDataAsync(resolve, 'text!../view/server.html', 'components/server');
+    }
+
+    var PRODUCT = function(resolve) {
+        return requireDataAsync(resolve, 'text!../view/product.html', 'components/product');
+    }
+
+    var NEWS = function(resolve) {
+        return requireDataAsync(resolve, 'text!../view/news.html', 'components/news');
+    }
+
+    var PARTNER = function(resolve) {
+        return requireDataAsync(resolve, 'text!../view/partner.html', 'components/partner');
     }
 
     var HOME = function(resolve) {
@@ -55,7 +71,10 @@ define(['vueRouter'], function(VueRouter) {
                 { name: 'about' ,path: 'about', component: function(resolve) { ABOUT(resolve) } },
                 { name: 'contact', path: 'contact', component: function(resolve) { CONTACT(resolve) } },
                 { name: 'person' ,path: 'person', component: function(resolve) { PERSON(resolve) } },
-                { name: 'server' ,path: 'server', component: function(resolve) { SERVER(resolve) } }
+                { name: 'server' ,path: 'server', component: function(resolve) { SERVER(resolve) } },
+                { name: 'product' ,path: 'product', component: function(resolve) { PRODUCT(resolve) } },
+                { name: 'news' ,path: 'news', component: function(resolve) { NEWS(resolve) } },
+                { name: 'partner' ,path: 'partner', component: function(resolve) { PARTNER(resolve) } }
             ]
         } 
     ]

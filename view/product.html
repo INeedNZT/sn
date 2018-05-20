@@ -1,0 +1,54 @@
+<div>
+    <div>
+        <img src="image/sub_banner.jpg" alt="">
+    </div>
+    <div class="pro container padding-fix">
+        <div class="c-title">
+            您现在的位置&nbsp;：首页&nbsp;»&nbsp;关于&nbsp;»&nbsp;产品中心
+        </div>
+        <div class="pro-title">
+            <ul class="clearfix">
+                <li v-bind:class="{active:active==='compr'}" @click="active='compr'"><span class="li-item">压缩机</span></li>
+                <li v-bind:class="{active:active==='cond'}" @click="active='cond'"><span class="li-item">冷凝器</span></li>
+                <li v-bind:class="{active:active==='evap'}" @click="active='evap'"><span class="li-item">蒸发器</span></li>
+                <li v-bind:class="{active:active==='airc'}" @click="active='airc'"><span class="li-item">空调</span></li>
+                <li v-bind:class="{active:active==='hose'}" @click="active='hose'"><span class="li-item">胶管</span></li>
+            </ul>
+        </div>
+        <div class="pro-list" v-if="active==='compr'">
+            <div class="pro-list-row">
+                <div class="pro-item">
+                    <img src="image/pro1.jpg" alt="">
+                </div>
+                <div class="pro-item">
+                    <img src="image/pro2.jpg" alt="">
+                </div>
+                <div class="pro-item">
+                    <img src="image/pro3.jpg" alt="">
+                </div>
+            </div>
+            <div class="pro-list-row">
+                <div class="pro-item">
+                    <img src="image/pro4.jpg" alt="">
+                </div>
+                <div class="pro-item">
+                    <img src="image/pro5.jpg" alt="">
+                </div>
+                <div class="pro-item">
+                    <img src="image/pro6.jpg" alt="">
+                </div>
+            </div>
+            <div class="pro-list-row">
+                <div class="pro-item">
+                    <img src="image/pro7.jpg" alt="">
+                </div>
+                <div class="pro-item">
+                    <img src="image/pro8.jpg" alt="">
+                </div>
+                <div class="pro-item">
+                    <img src="image/pro9.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

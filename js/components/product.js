@@ -1,5 +1,7 @@
 define(["jquery"], function($) {
   return function() {
-    return { active: "intro", page: 1 };
+    return {
+        active:'compr'
+    };
   };
 });

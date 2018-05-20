@@ -1,91 +1,112 @@
 img {
-    width: 100%;
+  width: 100%;
 }
 
 html {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 html body {
-    font-family: "Microsoft YaHei";
+  font-family: "Microsoft YaHei";
 }
 
 .col-7 {
-    flex: 0 0 56.333333%;
-    max-width: 56.333333%;
+  flex: 0 0 56.333333%;
+  max-width: 56.333333%;
 }
 
 .col-5 {
-    flex: 0 0 43.666667%;
-    max-width: 43.666667%;
+  flex: 0 0 43.666667%;
+  max-width: 43.666667%;
 }
-
 
 /*修改bootstrap max-width*/
 
 @media (min-width: 576px) {
-    html {
-        font-size: 12px;
-    }
-    .container {
-        max-width: 374px;
-    }
+  html {
+    font-size: 12px;
+  }
+  .container {
+    max-width: 374px;
+  }
 }
 
 @media (min-width: 768px) {
-    html {
-        font-size: 12px;
-    }
-    .container {
-        max-width: 85%;
-    }
+  html {
+    font-size: 12px;
+  }
+  .container {
+    max-width: 85%;
+  }
 }
 
 @media (min-width: 992px) {
-    .container {
-        max-width: 65%;
-    }
+  .container {
+    max-width: 65%;
+  }
 }
 
 @media (min-width: 1200px) {
-    html {
-        font-size: 16px;
-    }
-    .container {
-        max-width: 65%;
-    }
+  html {
+    font-size: 16px;
+  }
+  .container {
+    max-width: 65%;
+  }
 }
 
 ul li {
-    list-style: none;
+  list-style: none;
 }
-
 
 /*flex相关*/
 
 .fx {
-    display: flex;
+  display: flex;
 }
 
 .fx-inline {
-    display: inline-flex;
+  display: inline-flex;
 }
 
 .fx-center {
-    align-items: center;
+  align-items: center;
 }
 
 .fx-between {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 .fx-column {
-    flex-flow: column;
+  flex-flow: column;
 }
 
+.col-ul ul {
+  padding: 0;
+  display: flex;
+  flex-flow: column;
+}
 
-.col-ul ul{
-    padding: 0;
-    display: flex;
-    flex-flow: column;
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+
+.slide-fade-enter-active {
+  transition: all 1s ease;
+}
+/* .slide-fade-leave-active {
+  transition: all 0.3s ease;
+} */
+.slide-fade-enter, .slide-fade-leave-to
+  /* .slide-fade-leave-active for below version 2.1.8 */ {
+  transform: translateX(10px);
+  opacity: 0;
+}
+
+[v-cloak] {
+  display: none;
 }
