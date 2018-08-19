@@ -1,5 +1,62 @@
 <div>
-    <div>
-        <img src="image/sub_banner.jpg" alt="">
+    <router-view v-if="this.$route.name!='news'"></router-view>
+
+    <div v-if="this.$route.name=='news'">
+        <img src="image/second.jpg" alt="">
+    </div>
+
+    <div class="news container padding-fix" v-if="this.$route.name=='news'">
+        <div class="c-title">
+            您现在的位置&nbsp;：首页&nbsp;»&nbsp;企业新闻
+        </div>
+        <div class="news-info">
+            <ul class="fx">
+                <li>
+                    <router-link :to="{name:'one'}"><img src="image/news_sm_01.jpg" alt=""></router-link>
+                    <div class="content">
+                        <h3>双鸟公司携手2016上海法兰克福汽配展</h3>
+                        <div class="tx">
+                            <div class="sm-line"></div>
+                            <span>昨日双鸟科技股份有限公司参加了2016上海法兰福汽配展，公司总经理蒋志峰参加汽配展，全国50多家经销商参加了展会</span>
+                            <div>
+                                <router-link :to="{name:'one'}">查看详情></router-link>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href=""><img src="image/news_sm_02.jpg" alt=""></a>
+                    <div class="content">
+                        <h3>2016上海国际车用空调及冷藏技术展览会</h3>
+                        <div class="tx">
+                            <div class="sm-line"></div>
+                            <span>上海国际车用空调及冷藏技术展览会（CIAAR）已有13年历史, 是中国国内现今移动制冷行业领域最大规模展会</span>
+                            <div><a href="javascript:void(0)">查看详情></a></div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href=""><img src="image/news_sm_03.jpg" alt=""></a>
+                    <div class="content">
+                        <h3>美国拉斯维加斯汽配展</h3>
+                        <div class="tx">
+                            <div class="sm-line"></div>
+                            <span>AAPEXShow是全球最大的汽车售后服务专业展览会，也是美国最大的汽车制造业贸易博览会，并得到了美国两大汽车行业协会和美国商业部的支持</span>
+                            <div><a href="javascript:void(0)">查看详情></a></div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="n-b">
+                <h3>下载专区</h3>
+                <div class="dl">
+                    <img src="image/snbook.jpg" alt="">
+                    <div class="tx">2017无锡双鸟科技股份有限公司产品图册</div>
+                    <div style="margin: auto;text-align: center;">
+                        <button class="btn" @click="download()"><i class="iconfont icon-xiazai"></i>&nbsp;下载</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

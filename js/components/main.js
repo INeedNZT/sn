@@ -1,9 +1,11 @@
 /* Vue和Router启动 */
-define(["vue", "vueRouter", "routerConfig"], function(
+define(["vue", "vueRouter", "vueAwesomeSwiper", "routerConfig"], function(
   Vue,
   VueRouter,
-  routerConfig 
+  VueAwesomeSwiper,
+  routerConfig
 ) {
+  Vue.use(VueAwesomeSwiper);
   Vue.use(VueRouter);
   var app = new Vue({ el: "#app", router: routerConfig.router });
   return app;

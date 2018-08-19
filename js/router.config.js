@@ -57,6 +57,21 @@ define(['vueRouter'], function(VueRouter) {
       });
     };
 
+    var NEWS_ONE = function(resolve) {
+        return requireDataAsync(resolve, 'text!../view/news_one.html', 'components/news_one');
+    }
+
+    var NEWS_TWO = function(resolve) {
+        return requireDataAsync(resolve, 'text!../view/news_two.html', 'components/news_two');
+    }
+
+    var NEWS_THREE = function(resolve) {
+        return requireDataAsync(resolve, 'text!../view/news_three.html', 'components/news_three');
+    }
+    
+
+   
+
     var routes = [
         {
             path:'/',
@@ -66,15 +81,21 @@ define(['vueRouter'], function(VueRouter) {
             path: '/app',
             component: function(resolve) { APP(resolve) },
             children: [
-                { path: '', component: function(resolve) { HOME(resolve) } },
+                { path: '', component: function(resolve) { HOME(resolve) }},
                 { name: 'home', path: 'home', component: function(resolve) { HOME(resolve) } },
                 { name: 'about' ,path: 'about', component: function(resolve) { ABOUT(resolve) } },
                 { name: 'contact', path: 'contact', component: function(resolve) { CONTACT(resolve) } },
                 { name: 'person' ,path: 'person', component: function(resolve) { PERSON(resolve) } },
                 { name: 'server' ,path: 'server', component: function(resolve) { SERVER(resolve) } },
                 { name: 'product' ,path: 'product', component: function(resolve) { PRODUCT(resolve) } },
-                { name: 'news' ,path: 'news', component: function(resolve) { NEWS(resolve) } },
-                { name: 'partner' ,path: 'partner', component: function(resolve) { PARTNER(resolve) } }
+                { name: 'partner' ,path: 'partner', component: function(resolve) { PARTNER(resolve) } },
+                { name: 'news' ,path: 'news', component: function(resolve) { NEWS(resolve) }, 
+                  children:[
+                    {name:'one',path:'one',component:function(resolve){NEWS_ONE(resolve)}},
+                    {name:'two',path:'two',component:function(resolve){NEWS_TWO(resolve)}},
+                    {name:'three',path:'three',component:function(resolve){NEWS_THREE(resolve)}}
+                  ]
+                }
             ]
         } 
     ]
@@ -82,6 +103,11 @@ define(['vueRouter'], function(VueRouter) {
     var router = new VueRouter({
         routes: routes,
         linkActiveClass :'nav-active'
+    });
+
+    // 全局前置路由守卫
+    router.beforeEach((to, from, next) => {
+        next();
     });
 
     return { router: router }

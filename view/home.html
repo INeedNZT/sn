@@ -1,6 +1,12 @@
 <div style="background-color: rgb(250, 250, 250);">
     <div class="banner">
-        <img src="image/banner.jpg" alt="">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" v-for="banner in banners">
+                <img :src="banner">
+            </div>
+        </div>
+        <div class="swiper-button-prev" slot="button-prev"></div>
+        <div class="swiper-button-next" slot="button-next"></div>
     </div>
     <div class="content container padding-fix">
         <div class="row no-gutters">

@@ -1,6 +1,6 @@
 <div>
     <div>
-        <img src="image/sub_banner.jpg" alt="">
+        <img src="image/second.jpg" alt="">
     </div>
     <div class="server container padding-fix">
         <div class="c-title">
@@ -31,7 +31,7 @@
                         </td>
                         <td>
                             <select>
-                                <option value="0">选择地区</option>
+                                <option v-for="province in provinceList" :value="province.code" >{{province.name}}</option>
                             </select>
                         </td>
                         <td>
