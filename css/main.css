@@ -1,3 +1,11 @@
+.blue-link {
+    color: #212529;
+}
+
+.blue-link :hover {
+    color: #0c4884;
+}
+
 header {}
 
 header nav {
@@ -40,7 +48,7 @@ header .top .nav-middle .t-img {
 }
 
 header .top .nav-middle .t-img img {
-    width: 10.5rem;
+    width: 9.5rem;
 }
 
 header .top .nav-middle .r-icon {
@@ -781,11 +789,11 @@ footer .rt .rt-rt .search input {
 
 .n-o .n-o-info {}
 
-.n-o .n-o-info .n-o-title{
+.n-o .n-o-info .n-o-title {
     background: #fbfbfb;
 }
 
-.n-o .n-o-info .n-o-title .top{
+.n-o .n-o-info .n-o-title .top {
     font-size: 1rem;
     font-weight: bold;
     padding: 1.4rem 0;
@@ -793,24 +801,29 @@ footer .rt .rt-rt .search input {
     border-bottom: 1px dashed #6b6b6b;
 }
 
-.n-o .n-o-info .n-o-title .bottom{
+.n-o .n-o-info .n-o-title .bottom {
     padding: 0.6rem 0 3rem 0;
     text-align: center;
     color: #7e7e7e;
     font-size: 0.8rem;
 }
 
-.n-o .n-o-info .n-o-pic{
+.n-o .n-o-info .n-o-content {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.n-o .n-o-info .n-o-pic {
     margin-top: 2rem;
 }
 
-.n-o .n-o-info .n-o-pic ul{
+.n-o .n-o-info .n-o-pic ul {
     display: block;
     padding: 0;
     margin: 0;
 }
 
-.n-o .n-o-info .n-o-pic ul li{
+.n-o .n-o-info .n-o-pic ul li {
     float: left;
     width: 48%;
     margin-right: 4%;
@@ -819,7 +832,15 @@ footer .rt .rt-rt .search input {
     border: 1px solid #d2d2d2;
 }
 
-.n-o .n-o-info .n-o-pic ul li:nth-child(2n){
+.n-o .n-o-info .n-o-pic ul li.full {
+    float: left;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    padding: 0.6rem 0.6rem;
+    border: 1px solid #d2d2d2;
+}
+
+.n-o .n-o-info .n-o-pic ul li:nth-child(2n) {
     margin-right: 0;
 }
 
