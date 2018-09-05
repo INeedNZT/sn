@@ -50,7 +50,7 @@ define(['jquery','async!BMap'], function($) {
           map.enableDragging();
   
           var opts = { width: 240, height: 100, title: place }; // 信息窗口宽度 // 信息窗口高度 // 信息窗口标题
-          var infoWindow = new BMap.InfoWindow("地址：江苏省无锡市惠山区惠明路88号 <br/> 电话：86-510-83263888", opts); // 创建信息窗口对象
+          var infoWindow = new BMap.InfoWindow("地址：江苏省无锡市惠山区惠明路88号 <br/> 电话：0510-83263888", opts); // 创建信息窗口对象
           // 默认打开
           map.openInfoWindow(infoWindow, point);
           mark.addEventListener("click", function() {

@@ -19,7 +19,8 @@ define(["jquery"], function($) {
         if (!window.Blob) {
           window.open("data/2017企业最新介绍.rar");
         } else {
-          this.loadBinaryResource("data/2017企业最新介绍.rar", "2017企业最新介绍.rar");
+          window.open("data/2017企业最新介绍.rar");
+          // this.loadBinaryResource("data/2017企业最新介绍.rar", "2017企业最新介绍.rar");
         }
       }
     };

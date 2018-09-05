@@ -106,9 +106,9 @@ define(['vueRouter'], function(VueRouter) {
     });
 
     // 全局前置路由守卫
-    router.beforeEach((to, from, next) => {
-        next();
-    });
+    // router.beforeEach((to, from, next) => {
+    //     next();
+    // });
 
     return { router: router }
 
